@@ -1,2 +1,3 @@
-# apuntes-nextjs
-Apuntes de NextJS del curso de Lee Robinson
+# Apuntes - NextJS
+
+Apuntes del curso de Lee Robinson
