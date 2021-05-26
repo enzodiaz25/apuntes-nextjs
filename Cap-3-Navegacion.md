@@ -7,6 +7,10 @@ Este componente nos permite agregar enlaces en la página. Es parecido al anchor
 En la prop "href" podemos definir la página a la que queremos trasladar al usuario.
 La ventaja de utilizar estos "Link" es que NextJS puede cargar, además de los datos de la página que se encuentra abierta, la información de las páginas asociadas a esos links. Es decir, los datos de las páginas a las que llevan esos links se cargan con antelación. Esto permite que esas páginas se abran rápidamente cuando el usuario desee visitarlas.
 ```jsx
+import Link from "next/link"
+
+...
+
 <Link href="/about">About</Link>
 
 ```
@@ -34,6 +38,8 @@ Una vez hecho esto, podremos utilizar ese id dentro del componente Post (ver eje
 El hook useRouter() nos devuelve un objeto del que podemos extraer, entre otras cosas, el valor que se reemplazó en la ruta de la página. Siguiendo con el ejemplo anterior, tenemos:
 ```jsx
 // pages/post/[id]/index.js
+
+import { useRouter } from "next/router"
 
 const Post = () => {
     const router = useRouter();
