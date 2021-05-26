@@ -92,4 +92,4 @@ const handleClick = (e) => {
     router.push("/dashboard");
 }
 ```
-Esto es útil si, por ejemplo, queremos enviar al usuario a una pagina determina después de que ingresa sus datos y da click en un botón para autenticarse.
+Esto es útil si, por ejemplo, queremos enviar al usuario a una pagina determinada después de que ingresa sus datos y da click en un botón para autenticarse.
