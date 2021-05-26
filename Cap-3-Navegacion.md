@@ -3,9 +3,9 @@
 NextJS propone una alternativa sencilla a React Router que nos permite navegar entre páginas.
 
 ### Componente \<Link/>
-Este componente nos permite agregar enlaces en la página. Es parecido al anchor tag (<a/>) de HTML.
+Este componente nos permite agregar enlaces en la página. Es parecido al anchor tag \<a/> de HTML.
 En la prop "href" podemos definir la página a la que queremos trasladar al usuario.
-La ventaja de utilizar estos "Link" es que NextJS puede cargar, además de los datos de la página que se encuentra abierta, la información de las páginas asociadas a esos links. Es decir, los datos de las páginas a las que llevan esos links se cargan con antelación. Esto permite que esas páginas se abran rápidamente cuando el usuario lo desee.
+La ventaja de utilizar estos "Link" es que NextJS puede cargar, además de los datos de la página que se encuentra abierta, la información de las páginas asociadas a esos links. Es decir, los datos de las páginas a las que llevan esos links se cargan con antelación. Esto permite que esas páginas se abran rápidamente cuando el usuario desee visitarlas.
 ```jsx
 <Link href="/about">About</Link>
 
@@ -27,7 +27,7 @@ y vincular esa página con un Link:
 </Link>
 ```
 De esta manera le indicamos a Next que el componente que debe renderizar al clickear en ese Link es el que está en el directorio /post/[id]/index.js, y que **el id que tendrá ese post es el que reemplazamos en la prop "as": first-post**.
-Una vez hecho esto, podremos utilizar ese id dentro del componente Post.
+Una vez hecho esto, podremos utilizar ese id dentro del componente Post (ver ejemplo en el parrafo siguiente).
 
 ### useRouter
 
@@ -84,7 +84,7 @@ const Post = ({ title, body }) => {
 
 ### Redireccionamiento
 
-Una manera de redirigir al usuario a otra página es utilizando router.push.
+Una manera de redirigir al usuario a otra página es utilizando router.push("...").
 ```jsx
 const router = useRouter();
 
